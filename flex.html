@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="imagens/favicon.png">
+    <title>PLAYGROUND - Flex test</title>
+</head>
+<body>
+    <div class="flex_bg_stat">
+        <nav>
+            <ul class="menu">
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="festa.html">FESTA</a></li>
+                <li><a href="listas.html">HATE ZONE</a></li>
+                <li><a href="ping-pong.html">PING-PONG</a></li>
+                <li><a href="noturno.html">NOTURNO</a></li>
+                <li><a href="flex.html">FLEX TEST</a></li>
+                <li><a href="iceberg.html">ICEBERG</a></li>
+                <li><a href="galeria.html">MARIO KART</a></li>
+            </ul>
+        </nav>
+        
+        <div class="informacoesflex">
+            <p><pre><span>.container </span>{
+            <span>display: flex;</span>
+            <span class="span_direction">flex-direction: row;</span>
+            <span class="span_justify">justify-content: flex-start;</span>
+            <span class="span_align">align-items: stretch;</span>
+            <span class="span_wrap">flex-wrap: nowrap;</span>
+            <span class="span_align_content">align-content: stretch;</span>
+            }</pre>
+            </p>
+        </div>
+
+        <div class="flex_content">
+            <p>flex-direction</p>
+            <div class="flexbuttons">
+            <button onclick="flex_row()">row</button>
+            <button onclick="flex_row_reverse()">row reverse</button>
+            <button onclick="flex_column()">column</button>
+            <button onclick="flex_column_reverse()">column reverse</button>
+            </div>
+
+            <p>justify-content</p>
+            <div class="flexbuttons">
+            <button onclick="justify_start()">flex-start</button>
+            <button onclick="justify_center()">center</button>
+            <button onclick="justify_end()">flex-end</button>
+            <button onclick="justify_space_between()">space-between</button>
+            <button onclick="justify_space_around()">space-around</button>
+            </div>
+
+            <p>align-items</p>
+            <div class="flexbuttons">
+            <button onclick="align_start()">flex-start</button>
+            <button onclick="align_center()">center</button>
+            <button onclick="align_end()">flex-end</button>
+            <button onclick="align_stretch()">stretch</button>
+            </div>
+
+            <p>flex-wrap</p>
+            <div class="flexbuttons">
+            <button onclick="nowrap()">nowrap</button>
+            <button onclick="wrap()">wrap</button>
+            <button onclick="wrap_reverse()">wrap-reverse</button>
+            </div>
+
+            <p>align-content</p>
+            <div class="flexbuttons">
+            <button class="ac" onclick="align_content_stretch()">stretch</button>
+            <button class="ac" onclick="align_content_start()">flex-start</button>
+            <button class="ac" onclick="align_content_center()">center</button>
+            <button class="ac" onclick="align_content_end()">flex-end</button>
+            <button class="ac" onclick="align_content_space_between()">space-between</button>
+            <button class="ac" onclick="align_content_space_around()">space-around</button></div>
+
+            <div class="flex-container"></div>
+
+            <div class="flex_addremove">
+                <button class="flex_add flex_ar" onclick="flex_add()">ADD BOX</button>
+                <button class="flex_add_10 flex_ar" onclick="flex_add_10()">ADD 10 BOXES</button>
+                <button class="flex_remove flex_ar" onclick="flex_remove()">REMOVE BOX</button>
+                <button class="flex_clear flex_ar" onclick="flex_clear()">CLEAR ALL</button>
+            </div>
+        </div>
+
+
+
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

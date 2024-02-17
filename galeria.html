@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>PLAYGROUND - Galeria</title>
+</head>
+<body>
+        <div class="mk_top_bg" id="mk_top_bg">
+            <div class="mk_player_texto" id="mk_player_texto">
+                <h1 class="mk_player_name mk_fechar" id="mk_fechar" onclick="mk_fechar()">X</h1>
+                <h1 class="mk_player_title" id="mk_player_title"></h1>
+                <p class="mk_player_description" id="mk_player_description"></p>
+            </div>
+            <div class="mk_player_img">
+                <img src="" id="mk_player_img">
+            </div>
+        </div>
+
+        <div class="bg_stat bgmk">
+            <nav>
+                <ul class="menu">
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="festa.html">FESTA</a></li>
+                    <li><a href="listas.html">HATE ZONE</a></li>
+                    <li><a href="ping-pong.html">PING-PONG</a></li>
+                    <li><a href="noturno.html">NOTURNO</a></li>
+                    <li><a href="flex.html">FLEX TEST</a></li>
+                    <li><a href="iceberg.html">ICEBERG</a></li>
+                    <li><a href="galeria.html">MARIO KART</a></li>
+                </ul>
+            </nav>
+
+        <div class="mk_title">
+            <img src="imagens/galeria/titulo.png">
+        </div>
+
+        <div class="mk_images">
+            <div class="mk_players">
+            <img src="imagens/galeria/1d.png" id="mk_mario" onmouseover="over_mario()" onmouseout="out_mario()" onclick="click_mario()">
+            <img src="imagens/galeria/2d.png" id="mk_luigi" onmouseover="over_luigi()" onmouseout="out_luigi()" onclick="click_luigi()">            
+            <img src="imagens/galeria/3d.png" id="mk_peach" onmouseover="over_peach()"  onmouseout="out_peach()" onclick="click_peach()">            
+            <img src="imagens/galeria/4d.png" id="mk_toad" onmouseover="over_toad()"  onmouseout="out_toad()" onclick="click_toad()">            
+            <img src="imagens/galeria/5d.png" id="mk_yoshi" onmouseover="over_yoshi()"  onmouseout="out_yoshi()" onclick="click_yoshi()">            
+            <img src="imagens/galeria/6d.png" id="mk_dk" onmouseover="over_dk()" onmouseout="out_dk()" onclick="click_dk()">            
+            <img src="imagens/galeria/7d.png" id="mk_wario" onmouseover="over_wario()" onmouseout="out_wario()" onclick="click_wario()">            
+            <img src="imagens/galeria/8d.png" id="mk_bowser" onmouseover="over_bowser()" onmouseout="out_bowser()" onclick="click_bowser()">            
+            </div>
+        </div>
+    <script src="script.js"></script>        
+</body>
+</html>
